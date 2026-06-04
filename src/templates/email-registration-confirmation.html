@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation de réception - WeLinkYou</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f5; line-height: 1.6;">
+  <table role="presentation" style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+        <table role="presentation" style="width: 100%; max-width: 600px; border-collapse: collapse; background-color: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          
+          <!-- Header with Logo -->
+          <tr>
+            <td style="padding: 40px 40px 30px 40px; text-align: center; background: linear-gradient(135deg, #0b666b 0%, #11c6b8 100%); border-radius: 16px 16px 0 0;">
+              <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">WeLinkYou</h1>
+              <p style="margin: 8px 0 0 0; color: rgba(255, 255, 255, 0.9); font-size: 14px;">Votre réseau de confiance</p>
+            </td>
+          </tr>
+          
+          <!-- Main Content -->
+          <tr>
+            <td style="padding: 40px;">
+              <!-- Greeting -->
+              <h2 style="margin: 0 0 20px 0; color: #0b666b; font-size: 24px; font-weight: 600;">
+                Bonjour {{prenom}},
+              </h2>
+              
+              <!-- Confirmation Message -->
+              <p style="margin: 0 0 20px 0; color: #374151; font-size: 16px;">
+                Nous avons bien reçu votre demande d'inscription sur <strong>WeLinkYou</strong> en tant que professionnel.
+              </p>
+              
+              <!-- Info Box -->
+              <table role="presentation" style="width: 100%; border-collapse: collapse; margin: 30px 0;">
+                <tr>
+                  <td style="padding: 24px; background-color: #f0fdfa; border-radius: 12px; border-left: 4px solid #11c6b8;">
+                    <h3 style="margin: 0 0 12px 0; color: #0b666b; font-size: 16px; font-weight: 600;">
+                      📋 Récapitulatif de votre demande
+                    </h3>
+                    <table role="presentation" style="width: 100%; border-collapse: collapse;">
+                      <tr>
+                        <td style="padding: 8px 0; color: #6b7280; font-size: 14px; width: 40%;">Nom complet :</td>
+                        <td style="padding: 8px 0; color: #374151; font-size: 14px; font-weight: 500;">{{prenom}} {{nom}}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 8px 0; color: #6b7280; font-size: 14px;">Email :</td>
+                        <td style="padding: 8px 0; color: #374151; font-size: 14px; font-weight: 500;">{{email}}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 8px 0; color: #6b7280; font-size: 14px;">Catégorie :</td>
+                        <td style="padding: 8px 0; color: #374151; font-size: 14px; font-weight: 500;">{{categorie}}</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 8px 0; color: #6b7280; font-size: 14px;">Date de soumission :</td>
+                        <td style="padding: 8px 0; color: #374151; font-size: 14px; font-weight: 500;">{{date_soumission}}</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              
+              <!-- Next Steps -->
+              <h3 style="margin: 30px 0 16px 0; color: #374151; font-size: 18px; font-weight: 600;">
+                Prochaines étapes
+              </h3>
+              
+              <table role="presentation" style="width: 100%; border-collapse: collapse;">
+                <tr>
+                  <td style="padding: 12px 0; vertical-align: top;">
+                    <table role="presentation" style="border-collapse: collapse;">
+                      <tr>
+                        <td style="width: 32px; height: 32px; background: linear-gradient(135deg, #0b666b 0%, #11c6b8 100%); border-radius: 50%; text-align: center; vertical-align: middle; color: #ffffff; font-weight: 600; font-size: 14px;">1</td>
+                        <td style="padding-left: 16px; color: #374151; font-size: 15px;">
+                          <strong>Vérification de vos documents</strong><br>
+                          <span style="color: #6b7280; font-size: 14px;">Notre équipe examine vos pièces justificatives sous 48 à 72h ouvrées.</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 0; vertical-align: top;">
+                    <table role="presentation" style="border-collapse: collapse;">
+                      <tr>
+                        <td style="width: 32px; height: 32px; background: linear-gradient(135deg, #0b666b 0%, #11c6b8 100%); border-radius: 50%; text-align: center; vertical-align: middle; color: #ffffff; font-weight: 600; font-size: 14px;">2</td>
+                        <td style="padding-left: 16px; color: #374151; font-size: 15px;">
+                          <strong>Notification par email</strong><br>
+                          <span style="color: #6b7280; font-size: 14px;">Vous recevrez un email vous informant de la décision (approbation ou demande de compléments).</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 0; vertical-align: top;">
+                    <table role="presentation" style="border-collapse: collapse;">
+                      <tr>
+                        <td style="width: 32px; height: 32px; background: linear-gradient(135deg, #0b666b 0%, #11c6b8 100%); border-radius: 50%; text-align: center; vertical-align: middle; color: #ffffff; font-weight: 600; font-size: 14px;">3</td>
+                        <td style="padding-left: 16px; color: #374151; font-size: 15px;">
+                          <strong>Activation de votre profil</strong><br>
+                          <span style="color: #6b7280; font-size: 14px;">Une fois validé, votre profil sera visible sur notre plateforme.</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              
+              <!-- Divider -->
+              <hr style="margin: 30px 0; border: none; border-top: 1px solid #e5e7eb;">
+              
+              <!-- Contact Info -->
+              <p style="margin: 0; color: #6b7280; font-size: 14px; text-align: center;">
+                Une question ? Contactez-nous à<br>
+                <a href="mailto:contact@welinkyou.com" style="color: #0b666b; text-decoration: none; font-weight: 500;">contact@welinkyou.com</a>
+              </p>
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 30px 40px; background-color: #f9fafb; border-radius: 0 0 16px 16px; text-align: center;">
+              <p style="margin: 0 0 12px 0; color: #0b666b; font-size: 16px; font-weight: 600;">WeLinkYou</p>
+              <p style="margin: 0 0 16px 0; color: #6b7280; font-size: 13px;">
+                Votre réseau de professionnels de confiance entre la France et le Maroc
+              </p>
+              <table role="presentation" style="margin: 0 auto; border-collapse: collapse;">
+                <tr>
+                  <td style="padding: 0 8px;">
+                    <a href="https://welinkyou.com" style="color: #0b666b; text-decoration: none; font-size: 13px;">Site web</a>
+                  </td>
+                  <td style="color: #d1d5db;">|</td>
+                  <td style="padding: 0 8px;">
+                    <a href="https://welinkyou.com/faq" style="color: #0b666b; text-decoration: none; font-size: 13px;">FAQ</a>
+                  </td>
+                  <td style="color: #d1d5db;">|</td>
+                  <td style="padding: 0 8px;">
+                    <a href="https://welinkyou.com/contact" style="color: #0b666b; text-decoration: none; font-size: 13px;">Contact</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin: 20px 0 0 0; color: #9ca3af; font-size: 12px;">
+                © 2024 WeLinkYou. Tous droits réservés.
+              </p>
+            </td>
+          </tr>
+          
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

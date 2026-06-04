@@ -60,7 +60,7 @@ const values = [
 
 const WhyWeLinkYou = () => {
   useDocumentMeta({
-    title: "Pourquoi choisir WeLinkYou ?",
+    title: "Pourquoi choisir WeLinkYou ? Avantages et garanties",
     description: "Découvrez les avantages de WeLinkYou : profils vérifiés, professionnels engagés par charte, proximité culturelle et contact direct sans commission.",
   });
 

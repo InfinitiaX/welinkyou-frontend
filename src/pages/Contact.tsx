@@ -30,8 +30,8 @@ const staggerContainer = {
 
 const Contact = () => {
   useDocumentMeta({
-    title: "Contactez-nous",
-    description: "Une question sur WeLinkYou ? Contactez notre équipe. Nous sommes à votre écoute pour vous accompagner dans vos recherches de professionnels de confiance.",
+    title: "Contact WeLinkYou | Assistance & Informations",
+    description: "Une question sur WeLinkYou ? Contactez notre équipe pour vous accompagner dans votre recherche de professionnels vérifiés et adaptés à votre besoin.",
   });
 
   const { toast } = useToast();

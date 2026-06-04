@@ -89,8 +89,8 @@ const faqs = [
 
 const FAQ = () => {
   useDocumentMeta({
-    title: "Questions fréquentes (FAQ)",
-    description: "Retrouvez toutes les réponses à vos questions sur WeLinkYou : fonctionnement de la plateforme, vérification des profils, contact avec les professionnels et tarification.",
+    title: "FAQ WeLinkYou : Questions fréquentes",
+    description: "Toutes les réponses sur WeLinkYou : vérification des profils, fonctionnement, contact direct avec les professionnels et tarification.",
   });
   const [searchQuery, setSearchQuery] = useState("");
   const [openItems, setOpenItems] = useState<string[]>([]);

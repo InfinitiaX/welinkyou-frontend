@@ -82,8 +82,8 @@ const stats = [
 
 const Index = () => {
   useDocumentMeta({
-    title: "Vous cherchez un avocat, un notaire ou un expert en lien avec le Maroc ?",
-    description: "Marocains du monde, expatriés, porteurs de projets ou investisseurs transfrontaliers : WeLinkYou vous connecte à des professionnels de confiance, basés au Maroc ou dans votre pays de résidence.",
+    title: "Trouvez votre Avocat, Notaire ou Expert lié au Maroc | WeLinkYou",
+    description: "WeLinkYou connecte MRE, investisseurs, expatriés à des professionnels vérifiés au Maroc ou dans leur pays de résidence.",
   });
 
   return (

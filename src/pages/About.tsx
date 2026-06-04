@@ -24,8 +24,8 @@ const staggerContainer = {
 
 const About = () => {
   useDocumentMeta({
-    title: "À propos de WeLinkYou",
-    description: "Découvrez WeLinkYou, la plateforme de confiance qui connecte la diaspora franco-marocaine à des professionnels vérifiés. Notre mission : faciliter vos démarches entre la France et le Maroc.",
+    title: "À propos de WeLinkYou - Plateforme pour la diaspora franco-marocaine",
+    description: "Découvrez WeLinkYou, la plateforme qui connecte la diaspora franco-marocaine à des professionnels vérifiés entre la France et le Maroc.",
   });
 
   return (

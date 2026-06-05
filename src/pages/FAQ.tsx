@@ -89,7 +89,7 @@ const faqs = [
 
 const FAQ = () => {
   useDocumentMeta({
-    title: "FAQ WeLinkYou : Questions fréquentes",
+    title: "FAQ WeLinkYou : Questions et réponses utilisateurs",
     description: "Toutes les réponses sur WeLinkYou : vérification des profils, fonctionnement, contact direct avec les professionnels et tarification.",
   });
   const [searchQuery, setSearchQuery] = useState("");
@@ -160,9 +160,10 @@ const FAQ = () => {
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight"
               >
-                Questions{" "}
+                {/*FAQ WelinkYou : Questions fréquentes */}
+                FAQ WelinkYou : {" "}
                 <span className="relative">
-                  <span className="relative z-10 text-gradient-vibrant">fréquentes</span>
+                  <span className="relative z-10 text-gradient-vibrant">Questions fréquentes</span>
                   <motion.span
                     initial={{ width: 0 }}
                     animate={{ width: "100%" }}
@@ -173,7 +174,7 @@ const FAQ = () => {
               </motion.h1>
 
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
-                Trouvez rapidement les réponses à vos questions
+                Toutes les réponses sur WelinkYou : vérification des profils, fonctionnement, contact direct avec les professionnels et tarification.
               </motion.p>
 
               {/* Search */}

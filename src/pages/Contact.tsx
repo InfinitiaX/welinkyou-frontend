@@ -100,7 +100,7 @@ const Contact = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
           {/* Background with gradient overlay */}
           <div className="absolute inset-0">
             <div
@@ -144,9 +144,10 @@ const Contact = () => {
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight"
               >
-                Nous sommes là pour{" "}
+                {/**  Contact WeLinkYou | Assistance & Informations */}
+                Contact WeLinkYou |{" "}
                 <span className="relative">
-                  <span className="relative z-10 text-gradient-vibrant">vous aider</span>
+                  <span className="relative z-10 text-gradient-vibrant">Assistance et Informations</span>
                   <motion.span
                     initial={{ width: 0 }}
                     animate={{ width: "100%" }}
@@ -157,7 +158,7 @@ const Contact = () => {
               </motion.h1>
 
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/90 leading-relaxed">
-                Une question, une suggestion ? Notre équipe est disponible pour vous accompagner.
+                Une question sur WeLinkYou ? Contactez notre équipe pour vous accompagner dans votre recherche de professionnels vérifiés et adaptés à votre besoin.
               </motion.p>
             </motion.div>
           </div>

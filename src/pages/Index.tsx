@@ -68,11 +68,11 @@ const imageVariants: Variants = {
     transition: { duration: 0.8, ease: easeOut },
   },
 };
-
+// Trouvez votre Avocat, Notaire ou Expert lié au Maroc | WeLinkYou
 // Apple-style split text animation
-const heroTitleLine1 = ["Vous", "cherchez", "un"];
-const heroAccentWords = ["avocat,", "un", "notaire", "ou", "un", "expert"];
-const heroTitleLine2 = "en lien avec le Maroc ?";
+const heroTitleLine1 = ["Trouvez", "votre"];
+const heroAccentWords = ["Avocat,", "Notaire", "ou", "Expert"];
+const heroTitleLine2 = "lié au Maroc";
 
 const stats = [
   { icon: Shield, value: "100%", label: "Profils vérifiés" },
@@ -160,8 +160,7 @@ const Index = () => {
               transition={{ delay: 1.1, duration: 0.6 }}
               className="text-lg md:text-xl text-white/85 max-w-3xl mx-auto mt-6 mb-10"
             >
-              Marocains du monde, expatriés, porteurs de projets ou investisseurs transfrontaliers : WeLinkYou vous
-              <span className="font-bold"> connecte </span>à des professionnels de confiance, basés au Maroc ou dans votre pays de résidence.
+              WeLinkYou <span className="font-bold"> connecte </span> MRE, investisseurs, expatriés à des professionnels <span className="font-bold"> vérifiés </span> au Maroc ou dans leur pays de résidence.
             </motion.p>
           </div>
 

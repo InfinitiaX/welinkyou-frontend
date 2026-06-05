@@ -61,8 +61,9 @@ const values = [
 const WhyWeLinkYou = () => {
   useDocumentMeta({
     title: "Pourquoi choisir WeLinkYou ? Avantages et garanties",
-    description: "Découvrez les avantages de WeLinkYou : profils vérifiés, professionnels engagés par charte, proximité culturelle et contact direct sans commission.",
+    description: "WeLinkYou connecte des professionnels de confiance à des besoins spécialisés, locaux ou transfrontaliers, dans un cadre transparent et sécurisé.",
   });
+  {/*WeLinkYou centralise et connecte des professionnels de confiance à des besoins nécessitant des compétences spécialisées, locales ou transfrontalières, dans un cadre structuré et transparent */}
 
   return (
     <div className="min-h-screen flex flex-col bg-background">

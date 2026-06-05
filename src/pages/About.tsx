@@ -24,8 +24,8 @@ const staggerContainer = {
 
 const About = () => {
   useDocumentMeta({
-    title: "À propos de WeLinkYou - Plateforme pour la diaspora franco-marocaine",
-    description: "Découvrez WeLinkYou, la plateforme qui connecte la diaspora franco-marocaine à des professionnels vérifiés entre la France et le Maroc.",
+    title: "WeLinkYou - La plateforme de référence pour trouver des professionnels de confiance liés au Maroc ",
+    description: "Découvrez WeLinkYou, la plateforme conçue pour la diaspora, les expatriés et les investisseurs recherchant des professionnels vérifiés liés au Maroc.",
   });
 
   return (
@@ -78,9 +78,10 @@ const About = () => {
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight"
               >
-                Connecter les professionnels,{" "}
+                {/* WeLinkYou - La plateforme de référence pour trouver des professionnels de confiance liés au Maroc */}
+                WeLinkYou -{" "}
                 <span className="relative">
-                  <span className="relative z-10 text-gradient-vibrant">simplifier la confiance</span>
+                  <span className="relative z-10 text-gradient-vibrant">La plateforme de référence pour trouver des professionnels de confiance liés au Maroc</span>
                   <motion.span
                     initial={{ width: 0 }}
                     animate={{ width: "100%" }}
@@ -94,9 +95,7 @@ const About = () => {
                 variants={fadeInUp}
                 className="text-lg md:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto mb-10"
               >
-                WeLinkYou est la plateforme simple et intuitive qui réunit des professionnels de confiance et des
-                utilisateurs en quête d'expertise transfrontalière liée au <strong className="text-white">Maroc</strong>
-                .
+                Découvrez WeLinkYou, la plateforme conçue pour la diaspora, les expatriés et les investisseurs recherchant des professionnels vérifiés liés au <strong className="text-white">Maroc</strong>.
               </motion.p>
 
               {/* Values badges */}

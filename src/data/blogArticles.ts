@@ -450,7 +450,7 @@ Les tendances de 2026 confirment l'intérêt croissant pour l'installation, l'im
 `,
     image: "https://images.unsplash.com/photo-1725656469709-4d0bcb828bcf?w=800&h=500&fit=crop",
     category: "Guide",
-    date: "10 Juin 2026",
+    date: "15 Juin 2026",
     author: "Équipe WeLinkYou",
     readTime: "9 min",
   },
@@ -615,7 +615,7 @@ Les frais varient selon le type de procuration, le notaire/avocat et la complexi
   - Risque : le mandataire peut **hypothéquer**, **vendre plus bas**, ou **engager des dettes** à ta place
 
 - **Choisir un mandataire non vérifié**
-  - Risque d'**abus de pouvoir**, de **fraude**, ou de **conflit familial**
+  - Risque **d'abus de pouvoir**, de **fraude**, ou de **conflit familial**
 
 - **Signer une procuration sans l'avis d'un avocat**
   - Risque de **rejet** par le notaire, la banque ou l'administration
@@ -697,7 +697,7 @@ En moyenne, entre **1 300 et 4 800 DH** (120-430 €) selon la complexité, le n
 
 Oui, la procuration est très utilisée pour :
 
-- acheter un bien à distance
+- acheter **un bien à distance**
 - vendre **un bien immobilier**
 - gérer **un bien locatif**
 - signer **le compromis** et **l'acte de vente** <a href="https://avocatmarocain.com/droit-immobilier-marocain/" target="_blank" rel="noopener noreferrer">avocatmarocain</a>
@@ -742,7 +742,7 @@ Tu gagnes du **temps**, de **la sécurité** et de **la tranquillité d'esprit**
 `,
     image: "https://images.unsplash.com/photo-1767972463877-b64ba4283cd0?w=800&h=500&fit=crop",
     category: "Juridique",
-    date: "12 Juin 2026",
+    date: "16 Juin 2026",
     author: "Équipe WeLinkYou",
     readTime: "8 min",
   },
@@ -840,7 +840,7 @@ La fiscalité est un autre point à ne pas négliger pour les MRE. **Barnes Marr
 En cas de revente, il faut aussi anticiper :
 
 - **l'impôt sur la plus-value**
-- les cas d'**exonération** possibles
+- les cas **d'exonération** possibles
 
 Le traitement fiscal dépend :
 
@@ -890,7 +890,7 @@ L'immobilier au Maroc reste **une excellente opportunité** pour les MRE, à con
 `,
     image: "https://images.unsplash.com/photo-1570133435807-5feefeb2d196?w=800&h=500&fit=crop",
     category: "Immobilier",
-    date: "14 Juin 2026",
+    date: "16 Juin 2026",
     author: "Équipe WeLinkYou",
     readTime: "9 min",
   },

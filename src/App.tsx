@@ -19,8 +19,8 @@ import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 // Blog pages disabled - Bientôt disponible
-// import Blog from "./pages/Blog";
-// import BlogDetail from "./pages/BlogDetail";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 import NotFound from "./pages/NotFound";
 import { MentionsLegales } from "./pages/MentionsLegales";
 import { CGU } from "./pages/CGU";
@@ -67,8 +67,8 @@ const App = () => (
             <Route path="/mot-de-passe-oublie" element={<ForgotPassword />} />
             <Route path="/reinitialiser-mot-de-passe" element={<ResetPassword />} />
             {/* Blog routes disabled - Bientôt disponible */}
-            <Route path="/blog" element={<NotFound />} />
-            <Route path="/blog/:slug" element={<NotFound />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/cgu" element={<CGU />} />
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />

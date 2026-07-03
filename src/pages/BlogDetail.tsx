@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
+import { marked } from "marked";
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -20,7 +21,7 @@ const BlogDetail = () => {
   }, [slug]);
 
   useDocumentMeta({
-    title: article ? article.title : "Article non trouvé",
+    title: article ? article.metaTitle : "Article non trouvé",
     description: article 
       ? article.excerpt 
       : "L'article que vous recherchez n'existe pas ou a été déplacé.",
@@ -29,6 +30,12 @@ const BlogDetail = () => {
   if (!article) {
     return <NotFound />;
   }
+
+  // Utiliser `marked` pour convertir le contenu Markdown en HTML de manière sécurisée
+  // `useMemo` évite de refaire le calcul à chaque rendu si le contenu de l'article ne change pas.
+  const formattedContent = useMemo(() => {
+    return marked(article.content, { breaks: true, gfm: true });
+  }, [article.content]);
 
   const relatedArticles = getRelatedArticles(article, 3);
 
@@ -153,11 +160,12 @@ const BlogDetail = () => {
                 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
                 prose-h4:text-lg prose-h4:mt-6 prose-h4:mb-2
                 prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4
+                prose-td:text-muted-foreground  prose-td:leading-relaxed prose-td:mb-4
                 prose-li:text-muted-foreground prose-li:my-1
                 prose-strong:text-foreground
                 prose-ul:my-4 prose-ol:my-4
               "
-              dangerouslySetInnerHTML={{ __html: formatContent(article.content) }}
+              dangerouslySetInnerHTML={{ __html: formattedContent }}
             />
 
             {/* CTA */}
@@ -217,26 +225,6 @@ const BlogDetail = () => {
       <Footer />
     </div>
   );
-};
-
-// Helper function to convert markdown-like content to HTML
-const formatContent = (content: string): string => {
-  return content
-    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-    .replace(/^#### (.*$)/gim, '<h4>$1</h4>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/^- (.*$)/gim, '<li>$1</li>')
-    .replace(/^\d+\. (.*$)/gim, '<li>$1</li>')
-    .replace(/(<li>.*<\/li>)\n(?=<li>)/g, '$1')
-    .replace(/(<li>.*<\/li>)(?!\n<li>)/g, '<ul>$1</ul>')
-    .replace(/<\/ul>\n<ul>/g, '')
-    .replace(/\n\n/g, '</p><p>')
-    .replace(/^(?!<[hluop])/gm, '<p>')
-    .replace(/(?<![>])$/gm, '</p>')
-    .replace(/<p><\/p>/g, '')
-    .replace(/<p>(<[hul])/g, '$1')
-    .replace(/(<\/[hul][^>]*>)<\/p>/g, '$1');
 };
 
 export default BlogDetail;

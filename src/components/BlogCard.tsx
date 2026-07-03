@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { BlogArticle } from "@/data/blogArticles";
 import { useState } from "react";
 import {
@@ -42,7 +43,7 @@ export const BlogCard = ({ article, index = 0 }: BlogCardProps) => {
         transition={{ delay: index * 0.1, duration: 0.5 }}
         className="group h-full"
       >
-        <div onClick={() => setShowComingSoon(true)} className="block h-full cursor-pointer">
+        <Link to={`/blog/${article.slug}`} className="block h-full cursor-pointer">
         <motion.div
           className="card-premium overflow-hidden h-full flex flex-col bg-card rounded-2xl shadow-md"
           whileHover={{ 
@@ -101,7 +102,7 @@ export const BlogCard = ({ article, index = 0 }: BlogCardProps) => {
             </motion.div>
           </div>
         </motion.div>
-      </div>
+      </Link>
     </motion.article>
     </>
   );

@@ -103,7 +103,7 @@ export const Footer = () => {
             <p className="text-background/50 text-sm">© {new Date().getFullYear()} WeLinkYou. Tous droits réservés.</p>
             <div className="flex items-center gap-6">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/welinkyou-a2aa8b3aa/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-background/50 hover:text-primary-light transition-colors"
@@ -111,7 +111,7 @@ export const Footer = () => {
                 LinkedIn
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/weli.nkyou/?hl=fr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-background/50 hover:text-primary-light transition-colors"
@@ -119,12 +119,12 @@ export const Footer = () => {
                 Instagram
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.facebook.com/profile.php?id=61589531045923"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-background/50 hover:text-primary-light transition-colors"
               >
-                Twitter
+                Facebook
               </a>
             </div>
           </div>

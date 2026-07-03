@@ -5,6 +5,7 @@ export interface BlogArticle {
   excerpt: string;
   content: string;
   metaTitle : string;
+  metaDescription : string;
   image: string;
   category: string;
   date: string;
@@ -285,6 +286,7 @@ export const blogArticles: BlogArticle[] = [
     slug: "mre-expatries-demarches-maroc-2026",
     excerpt: "Découvrez les démarches essentielles pour les MRE et expatriés au Maroc en 2026 : installation, immobilier, procuration, fiscalité et conseils pratiques.",
     metaTitle : "MRE et expatriés au Maroc en 2026 : démarches, immobilier et conseils",
+    metaDescription : "Découvrez les démarches essentielles pour les MRE et expatriés au Maroc en 2026 : installation, immobilier, procuration, fiscalité et conseils pratiques.",
     content: `
 Le Maroc attire de plus en plus de **Marocains Résidant à l'Étranger (MRE)**, de retraités et d'expatriés à la recherche d'un cadre de vie plus accessible, d'opportunités d'investissement et d'un lien plus simple avec leur pays d'origine. Selon un rapport du **CCME**, les MRE représentent environ **5,1 millions de personnes** et leurs transferts financiers ont atteint **115,3 milliards de dirhams en 2023**, confirmant leur rôle majeur dans l'économie nationale <a href="https://www.ccme.org.ma/lobservatoire-du-travail-gouvernemental-publie-un-rapport-sur-le-role-des-mre/" target="_blank" rel="noopener noreferrer">ccme.org</a>.
 
@@ -460,6 +462,7 @@ Les tendances de 2026 confirment l'intérêt croissant pour l'installation, l'im
     slug: "procuration-maroc-depuis-france-avocat",
     excerpt: "Accordez une procuration pour vendre, acheter, gérer un bien ou régler une succession au Maroc depuis la France. Trouvez un avocat marocain vérifié sur WeLinkYou.",
     metaTitle : "Procuration Maroc depuis la France : trouver un avocat vérifié | WeLinkYou",
+    metaDescription : "Accordez une procuration au Maroc depuis la France pour vendre, acheter ou gérer un bien. Trouvez un avocat marocain vérifié sur WeLinkYou.",
     content: `
 Tu es **Marocain Résidant à l'Étranger (MRE)** ou **français résidant en France** et tu as besoin d'accorder **une procuration pour agir au Maroc** (acheter, vendre, gérer un bien, régler une succession, signer un acte administratif) sans y être présent ?
 
@@ -752,6 +755,7 @@ Tu gagnes du **temps**, de **la sécurité** et de **la tranquillité d'esprit**
     slug: "immobilier-maroc-mre-guide-complet-acheter-2026",
     excerpt: "Découvrez comment acheter un bien immobilier au Maroc quand on est MRE : étapes, fiscalité, financement, devises, VEFA et erreurs à éviter.",
     metaTitle : "Immobilier Maroc pour les MRE : guide complet 2026",
+    metaDescription: "Découvrez comment acheter un bien immobilier au Maroc quand on est MRE : étapes, fiscalité, financement, devises, VEFA et erreurs à éviter.",
     content: `
 Acheter un bien immobilier au Maroc quand on vit à l'étranger est une décision importante, souvent liée à **un retour futur**, à **un projet familial** ou à **un investissement locatif**. Pour **les MRE**, le marché marocain reste attractif, mais il exige une vraie méthode, surtout quand l'achat se fait **à distance** <a href="https://medias24.com/2024/06/30/mre-acheter-un-bien-immobilier/" target="_blank" rel="noopener noreferrer">medias24</a>.
 

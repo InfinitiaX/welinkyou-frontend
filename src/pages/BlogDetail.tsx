@@ -23,7 +23,7 @@ const BlogDetail = () => {
   useDocumentMeta({
     title: article ? article.metaTitle : "Article non trouvé",
     description: article 
-      ? article.excerpt 
+      ? article.metaDescription 
       : "L'article que vous recherchez n'existe pas ou a été déplacé.",
   });
 

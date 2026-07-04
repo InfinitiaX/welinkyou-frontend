@@ -27,7 +27,7 @@ export const PolitiqueCookies = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-background">
               POLITIQUE DE COOKIES
             </h1>
-            <p className="text-background/70">Version : Janvier 2026</p>
+            <p className="text-background/70">Version : Avril 2026</p>
           </motion.div>
         </div>
       </section>
@@ -152,7 +152,7 @@ export const PolitiqueCookies = () => {
               </p>
               <div className="bg-muted/50 p-6 rounded-lg">
                 <p>
-                  <strong>Formulaire de contact :</strong>{" "}
+                  <strong className="font-semibold text-foreground/50">Formulaire de contact :</strong>{" "}
                   <Link to="/contact" className="text-primary hover:underline font-medium">
                     Cliquez ici
                   </Link>
@@ -163,7 +163,7 @@ export const PolitiqueCookies = () => {
             {/* Dernière mise à jour */}
             <div className="pt-8 border-t border-muted">
               <p className="text-sm text-foreground/60">
-                Version : Janvier 2026
+                Version : Avril 2026
               </p>
             </div>
           </div>

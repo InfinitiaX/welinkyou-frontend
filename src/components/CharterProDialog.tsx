@@ -24,7 +24,7 @@ export const CharterProDialog = ({ children }: CharterProDialogProps) => {
             <Shield className="w-6 h-6 text-primary" />
             Charte WeLinkYou – Engagement des professionnels
           </DialogTitle>
-          <p className="text-sm text-muted-foreground mt-1">Version : Janvier 2026</p>
+          <p className="text-sm text-muted-foreground mt-1">Version : Avril 2026</p>
         </DialogHeader>
         <ScrollArea className="h-[70vh] px-6 pb-6">
           <div className="prose prose-sm max-w-none space-y-6 text-foreground/80">
@@ -188,7 +188,7 @@ export const CharterProDialog = ({ children }: CharterProDialogProps) => {
             {/* Date */}
             <section className="pt-4 border-t border-border">
               <p className="text-xs text-muted-foreground text-center">
-                Version : Janvier 2026
+                Version : Avril 2026
               </p>
             </section>
           </div>

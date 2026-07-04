@@ -23,7 +23,7 @@ export const CGUProDialog = ({ children }: CGUProDialogProps) => {
           <DialogTitle className="text-2xl font-bold">
             CONDITIONS GÉNÉRALES D'UTILISATION — PROFESSIONNELS
           </DialogTitle>
-          <p className="text-sm text-muted-foreground mt-1">Version : Janvier 2026</p>
+          <p className="text-sm text-muted-foreground mt-1">Version : Avril 2026</p>
         </DialogHeader>
         <ScrollArea className="h-[70vh] px-6 pb-6">
           <div className="prose prose-sm max-w-none space-y-6 text-foreground/80">
@@ -179,7 +179,7 @@ export const CGUProDialog = ({ children }: CGUProDialogProps) => {
             {/* Date */}
             <section className="pt-4 border-t border-border">
               <p className="text-xs text-muted-foreground text-center">
-                Version : Janvier 2026
+                Version : Avril 2026
               </p>
             </section>
           </div>

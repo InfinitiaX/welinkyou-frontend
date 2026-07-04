@@ -44,13 +44,13 @@ export const MentionsLegales = () => {
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Éditeur du site</h2>
               <p className="mb-4">Le site WeLinkYou est édité par :</p>
               <div className="bg-muted/50 p-6 rounded-lg">
-                <p className="mb-2"><strong>WeLinkYou</strong></p>
+                <p className="mb-2"><strong className="font-semibold text-foreground">WeLinkYou</strong></p>
                 <p className="mb-2">Entreprise individuelle</p>
-                <p className="mb-2"><strong>Nom et prénom :</strong> Hind Chenaoui</p>
-                <p className="mb-2"><strong>Siret :</strong> 994 828 903 00017</p>
-                <p className="mb-2"><strong>Adresse :</strong> 60, rue François 1er – 75008 Paris</p>
-                <p className="mb-2"><strong>Pays :</strong> France</p>
-                <p><strong>Adresse e-mail :</strong> contact@welinkyou.co</p>
+                <p className="mb-2"><strong className="font-semibold text-foreground/50">Nom et prénom :</strong> Hind Chenaoui</p>
+                <p className="mb-2"><strong className="font-semibold text-foreground/50">Siret :</strong> 994 828 903 00017</p>
+                <p className="mb-2"><strong className="font-semibold text-foreground/50">Adresse :</strong> 60, rue François 1er – 75008 Paris</p>
+                <p className="mb-2"><strong className="font-semibold text-foreground/50">Pays :</strong> France</p>
+                <p><strong className="font-semibold text-foreground/50">Adresse e-mail :</strong > contact@welinkyou.co</p>
               </div>
             </section>
 
@@ -59,11 +59,11 @@ export const MentionsLegales = () => {
               <h2 className="text-2xl font-semibold text-foreground mb-4">2. Hébergement</h2>
               <p className="mb-4">Le site est hébergé par :</p>
               <div className="bg-muted/50 p-6 rounded-lg">
-                <p className="mb-2"><strong>OVHcloud</strong></p>
+                <p className="mb-2"><strong className="font-semibold text-foreground">OVHcloud</strong></p>
                 <p className="mb-2">SAS au capital de 10 174 560 €</p>
-                <p className="mb-2"><strong>Siège social :</strong> 2 rue Kellermann – 59100 Roubaix – France</p>
-                <p className="mb-2"><strong>Téléphone :</strong> +33 (0)9 72 10 10 07</p>
-                <p><strong>Site web :</strong> <a href="https://www.ovhcloud.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-light">www.ovhcloud.com</a></p>
+                <p className="mb-2"><strong className="font-semibold text-foreground/50">Siège social :</strong> 2 rue Kellermann – 59100 Roubaix – France</p>
+                <p className="mb-2"><strong className="font-semibold text-foreground/50">Téléphone :</strong> +33 (0)9 72 10 10 07</p>
+                <p><strong className="font-semibold text-foreground/50">Site web :</strong> <a href="https://www.ovhcloud.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-light">www.ovhcloud.com</a></p>
               </div>
             </section>
 
@@ -138,15 +138,16 @@ export const MentionsLegales = () => {
               <h2 className="text-2xl font-semibold text-foreground mb-4">9. Contact</h2>
               <p className="mb-4">Pour toute question relative au site ou aux présentes mentions légales, vous pouvez contacter WeLinkYou à l'adresse suivante :</p>
               <div className="bg-muted/50 p-6 rounded-lg">
-                <p className="mb-2"><strong>Email :</strong> contact@welinkyou.co</p>
-                <p><strong>Formulaire de contact :</strong> <a href="/contact" className="text-primary hover:text-primary-light">Cliquez ici</a></p>
+                <p className="mb-2"><strong className="font-semibold text-foreground/50">Email :</strong> contact@welinkyou.co</p>
+                <p><strong className="font-semibold text-foreground/50">Formulaire de contact :</strong> <a href="/contact" className="text-primary hover:text-primary-light">Cliquez ici</a></p>
               </div>
             </section>
 
             {/* Dernière mise à jour */}
             <div className="pt-8 border-t border-muted">
               <p className="text-sm text-foreground/60">
-                Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}
+                {/* Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')} */}
+                Dernière mise à jour : Avril 2026
               </p>
             </div>
           </div>

@@ -120,7 +120,7 @@ const CharteWeLinkYou = () => {
             {/* Dernière mise à jour */}
             <div className="pt-8 border-t border-muted">
               <p className="text-sm text-foreground/60">
-                Version : Janvier 2026
+                Version : Avril 2026
               </p>
             </div>
           </div>

@@ -69,9 +69,10 @@ const experienceOptions = [
 
 const allDocuments = [
   { id: "identity", name: "Preuve d'identité", description: "Carte d'identité ou passeport en cours de validité.", icon: User, required: false, hidden: true },
-  { id: "registration", name: "Inscription ou autorisation professionnelle", description: "Attestation d'inscription à un ordre ou registre professionnel ou document équivalent.", icon: FileText, required: true },
-  { id: "diploma", name: "Diplôme ou titre professionnel", description: "Diplôme ou titre permettant l'accès à la profession, ou document équivalent déclaré.", icon: Award, required: false, recommended: true },
-  { id: "kbis", name: "Justificatif d'activité professionnelle", description: "Document attestant de l'activité en cours (ex. extrait d'immatriculation).", icon: Building, required: false, conditional: true },
+  { id: "registration", name: "Justificatif du droit d’exercer", description: "Attestation d’inscription à un ordre ou registre professionnel, autorisation d’exercice ou document équivalent ", icon: FileText, required: true },
+  // Champ désactivé sur demande du client : diplôme ou titre professionnel
+  // { id: "diploma", name: "Diplôme ou titre professionnel", description: "Diplôme ou titre permettant l'accès à la profession, ou document équivalent déclaré.", icon: Award, required: false, recommended: true },
+  { id: "kbis", name: "Justificatif de la structure d’exercice ", description: "Document attestant de l’exercice légal du cabinet, société ou structure d’exercice(ex : extrait d’immatriculation) ", icon: Building, required: false, conditional: true },
 ];
 
 const STORAGE_KEY = "welinkyou_pro_registration";
@@ -1069,8 +1070,9 @@ const ProRegistration = () => {
                           <div>
                             <p className="font-medium text-foreground">Mes documents – Profil vérifié</p>
                             <p className="text-sm text-muted-foreground">
-                              La vérification de vos documents nous permet d'attribuer le badge "Profil vérifié" 
-                              et d'assurer la confiance des utilisateurs.
+                               La vérification de vos documents nous permet d’attribuer le badge « Profil vérifié »
+                                et d’assurer la confiance des utilisateurs. Les justificatifs sont supprimés dès leur
+                                vérification et au plus tard, dans un délai de 30 jours. 
                             </p>
                           </div>
                         </div>
@@ -1079,7 +1081,7 @@ const ProRegistration = () => {
                       <div className="space-y-3">
                         {allDocuments.filter((doc) => !doc.hidden).map((doc) => {
                           const isRequired = doc.required;
-                          const isRecommended = doc.recommended;
+                          // const isRecommended = doc.recommended;
                           const isConditional = doc.conditional;
                           
                           return (
@@ -1108,10 +1110,10 @@ const ProRegistration = () => {
                                       <span className="text-xs px-2 py-0.5 bg-destructive/10 text-destructive rounded-full">
                                         Requis
                                       </span>
-                                    ) : isRecommended ? (
-                                      <span className="text-xs px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">
-                                        Optionnel – recommandé
-                                      </span>
+                                    // ) : isRecommended ? (
+                                    //   <span className="text-xs px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">
+                                    //     Optionnel – recommandé
+                                    //   </span>
                                     ) : isConditional ? (
                                       <span className="text-xs px-2 py-0.5 bg-muted text-muted-foreground rounded-full">
                                         Si applicable

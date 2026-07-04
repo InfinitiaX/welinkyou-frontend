@@ -187,7 +187,7 @@ export const CGUDialog = ({ children }: CGUDialogProps) => {
             {/* Date */}
             <section className="pt-4 border-t border-border">
               <p className="text-xs text-muted-foreground text-center">
-                Dernière mise à jour : Janvier 2025
+                Dernière mise à jour : Avril 2026
               </p>
             </section>
           </div>
